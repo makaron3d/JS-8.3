@@ -3,18 +3,19 @@ module.exports = function(grunt) {
   grunt.initConfig({
     jshint: {
       all: ['js/*.js']
-    }
-  });
+    },
     sass: {
       options: {
         sourceMap: true
-      },
-      dist: {
+    },
+    dist: {
         files: {
           'css/main.css': 'sass/main.sass'
         }
       }
     }
+  });
+    
     
 
 

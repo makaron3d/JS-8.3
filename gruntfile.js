@@ -5,9 +5,21 @@ module.exports = function(grunt) {
       all: ['js/*.js']
     }
   });
+    sass: {
+      options: {
+        sourceMap: true
+      },
+      dist: {
+        files: {
+          'css/main.css': 'sass/main.sass'
+        }
+      }
+    }
+    
 
-  grunt.loadNpmTasks('grunt-contrib-jshint');
 
-  grunt.registerTask('default', ['jshint']);
+  grunt.loadNpmTasks('grunt-contrib-jshint', 'grunt-sass');
+
+  grunt.registerTask('default', ['jshint'] ['sass']);
 
 };

@@ -21,6 +21,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-jshint', 'grunt-sass');
 
-  grunt.registerTask('default', ['jshint'] ['sass']);
+  grunt.registerTask('default', ['jshint', 'sass']);
 
 };
